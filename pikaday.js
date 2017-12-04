@@ -1077,7 +1077,7 @@
                 top = top - height - field.offsetHeight;
             }
 
-            this.el.style.left = left + 'px';
+            this.el.style.left = Math.max(0, left) + 'px';
             this.el.style.top = top + 'px';
         },
 
